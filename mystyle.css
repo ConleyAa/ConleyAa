@@ -5,6 +5,9 @@ body { /*set the background of the page for any content not in sections*/
   background-color:white;
     font-family: "Arial";
     font-size: 16px;
+    width: 100%;
+}
+
 }
 img { /*set properties of the images to align in the middle and center of content when an image is present*/
     vertical-align: middle;
@@ -14,7 +17,7 @@ div.gallery { /*for the photo gallery to display in an array*/
   margin: 5px;
   border: 1px solid;
   float:none;
-  width: 750px;
+  width: 95%;
 }
 
 div.gallery:hover {
@@ -35,6 +38,8 @@ section { /*style info for the sections of the pages*/
     border-style: solid;
     padding: 2px;
     position: static;
+    width: 100%;
+    align-content: center;
 
 }
 article { /*style info for the articles within the section*/
@@ -43,6 +48,35 @@ article { /*style info for the articles within the section*/
     position: static;
     font-size: 14px;
     text-align: justify-all; /*to fill space*/
+}
+#service{
+    background-color: none;
+    
+
+}
+#about { /*style for the table and table elements*/
+    background-color: darksalmon;
+    padding: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+#index {
+    width: 95%
+    column-count: 2;
+    break-after: auto;
+}
+
+td{
+    padding: 5px;
+}
+th{
+    padding: 5px;
+}
+table {
+    width: 100%;
+    padding: 5px;
 }
 /*style properties for each heading, static positions for normal flow of page*/
 h1 {
@@ -95,8 +129,8 @@ h5 {
 h6 {
     color: black;
     font-family: "Arial";
+    font-feature-settings: normal;
     font-style: normal;
-    text-align: center;
     font-size: 12px;
     position: static; 
 }
