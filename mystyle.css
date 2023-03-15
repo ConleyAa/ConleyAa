@@ -1,6 +1,4 @@
 /*Aaliyah Conley | February 2023 | mystyle.css | This is the stylesheet to be used for the pages*/
-<!DOCTYPE css> /*indicates its a css sheet*/
-
 body { /*set the background of the page for any content not in sections*/
   background-color:white;
     font-family: "Arial";
@@ -8,7 +6,6 @@ body { /*set the background of the page for any content not in sections*/
     width: 100%;
 }
 
-}
 img { /*set properties of the images to align in the middle and center of content when an image is present*/
     vertical-align: middle;
     align-content:center;
@@ -16,8 +13,8 @@ img { /*set properties of the images to align in the middle and center of conten
 div.gallery { /*for the photo gallery to display in an array*/
   margin: 5px;
   border: 1px solid;
-  float:none;
-  width: 95%;
+  float:left;
+  width: 150px;
 }
 
 div.gallery:hover {
@@ -49,11 +46,6 @@ article { /*style info for the articles within the section*/
     font-size: 14px;
     text-align: justify-all; /*to fill space*/
 }
-#service{
-    background-color: none;
-    
-
-}
 #about { /*style for the table and table elements*/
     background-color: darksalmon;
     padding: 5px;
@@ -63,7 +55,7 @@ article { /*style info for the articles within the section*/
     border-width: 1px;
 }
 #index {
-    width: 95%
+    width: 95%;
     column-count: 2;
     break-after: auto;
 }
@@ -174,6 +166,11 @@ li a:active {
     background-color: blanchedalmond;
 }
 
+/*audio properties*/
+audio {
+    background-color: firebrick;
+}
+
 /*footer properties*/
 footer {
   background-color: white;
@@ -184,5 +181,5 @@ footer {
     left: 0;
     padding: 5px;
     width:100%;
-}
+    float: none;
 }
