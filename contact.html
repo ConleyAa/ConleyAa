@@ -42,11 +42,27 @@
             </tr>
             </table>
             
-               <form action=”response_page.php” method=”post”>
-             Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
+               <form action="response_page.php" method="post">
+                   <fieldset>
+                   <legend>Questions, Comments, or Concerns?</legend>
+                       <p><label for="name">Name:</label> <input type="text" id="name" name="name"></p>
+                       <p><label for="email"> E-mail: </label><input type="text"  id="email" name="email"></p>
+                       <p><label for="phone">Phone: </label><input type="text" name="phone" id="phone"></p>
+                       <p><label for="inqtype">Select the inquiry type:</label>
+                           <select name="inqtype" id="inqtype">
+                               <option value="Question">Question</option>
+                                <option value="Comment">Comment</option>
+                                <option value="Concern">Concern</option>
+                                <option value="other">Other</option>
+                           </select></p>
+                       <p><label for="inquiry">Please state your inquiry: <br></label><textarea id="inquiry" name="inquiry" rows="5" cols="28"></textarea></p>
+                       <p>How would you like to be contacted regarding your inquiry?</p>
+                       <p> <input type="radio" name="method" id="contact1" value="Email">
+                        <label for="contact1">E-mail</label></p>
+                        <p><input type="radio" name="method" id="contact2" value="phone" >
+                        <label for="contact2">Phone</label></p>
+                       <p><input type="submit"></p>
+                   </fieldset></form>
         </article>
             </section>
       
